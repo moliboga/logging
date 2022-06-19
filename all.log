@@ -1,0 +1,7 @@
+INFO   22-06-19 18:09:40 org.example.Main Checking user's parameters
+INFO   22-06-19 18:09:40 org.example.Main Name - artem
+INFO   22-06-19 18:09:40 org.example.Main Password - ******
+INFO   22-06-19 18:09:45 org.example.Main LogIn success on Facebook
+INFO   22-06-19 18:09:45 org.example.Main Message: 'artem message' was posted on Facebook
+ERROR  22-06-19 18:09:45 org.example.Main Unexpected error
+INFO   22-06-19 18:09:45 org.example.Main User: 'artem' was logged out from Facebook

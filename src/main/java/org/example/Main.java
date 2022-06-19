@@ -1,29 +1,27 @@
 package org.example;
 
-import org.apache.log4j.BasicConfigurator;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.logging.FileHandler;
+import org.example.template.Facebook;
+import org.example.template.Network;
+import org.example.template.Twitter;
 
 public class Main {
 
-    private static final Logger log = Logger.getLogger(Main.class);
-
     public static void main(String[] args) {
 
-        String log4jConfigFile = System.getProperty("user.dir")
-                + File.separator + "log4j.properties";
-        PropertyConfigurator.configure(log4jConfigFile);
+        Network network = null;
+        String userName = "artem";
+        String password = "135246";
+        String message = "artem message";
 
-        log.trace("Trace Message!");
-        log.debug("Debug Message!");
-        log.info("Info Message!");
-        log.warn("Warn Message!");
-        log.error("Error Message!");
-        log.fatal("Fatal Message!");
+        int choice = 1;
+//        int choice = 2;
+
+        if (choice == 1) {
+            network = new Facebook(userName, password);
+        } else if (choice == 2) {
+            network = new Twitter(userName, password);
+        }
+
+        network.post(message);
     }
 }
