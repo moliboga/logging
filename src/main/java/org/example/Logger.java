@@ -5,7 +5,7 @@ import org.apache.log4j.PropertyConfigurator;
 import java.io.File;
 
 public class Logger {
-    private static final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(Main.class);
+    private static final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(Logger.class);
 
     static{
         String log4jConfigFile = System.getProperty("user.dir")

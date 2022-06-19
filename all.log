@@ -5,3 +5,10 @@ INFO   22-06-19 18:09:45 org.example.Main LogIn success on Facebook
 INFO   22-06-19 18:09:45 org.example.Main Message: 'artem message' was posted on Facebook
 ERROR  22-06-19 18:09:45 org.example.Main Unexpected error
 INFO   22-06-19 18:09:45 org.example.Main User: 'artem' was logged out from Facebook
+INFO   22-06-19 18:35:54 org.example.Logger Checking user's parameters
+INFO   22-06-19 18:35:54 org.example.Logger Name - artem
+INFO   22-06-19 18:35:54 org.example.Logger Password - ******
+INFO   22-06-19 18:35:59 org.example.Logger LogIn success on Facebook
+INFO   22-06-19 18:35:59 org.example.Logger Message: 'artem message' was posted on Facebook
+ERROR  22-06-19 18:35:59 org.example.Logger Unexpected error
+INFO   22-06-19 18:35:59 org.example.Logger User: 'artem' was logged out from Facebook
